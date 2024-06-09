@@ -45,7 +45,7 @@ class Hurricane
 
         Random nmbs = new Random();
         int land = nmbs.Next(1, 13);
-        if (windSpeed > 175)
+        if (windSpeed > 200)
             if (land >= 3 && land <= 9)
             {
                 WriteLine(); 
