@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.Design;
 using System.Text.RegularExpressions;
 using static System.Console;
 using static System.Math;
@@ -41,6 +42,16 @@ class Hurricane
                 Write("Not a Hurricane");
             }
         }
+
+        Random nmbs = new Random();
+        int land = nmbs.Next(1, 13);
+        if (windSpeed > 175)
+            if (land >= 3 && land <= 9)
+            {
+                WriteLine(); 
+            Write("Highly Destructive Hurricane");
+        }
+       
     }
 }
     
